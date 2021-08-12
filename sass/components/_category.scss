@@ -75,6 +75,10 @@
     text-transform: uppercase;
 }
 
+.card:hover, .card:focus .card__info {
+    color:var(--color-white);
+}
+
 .card__price {
     font-weight: bold;
 }

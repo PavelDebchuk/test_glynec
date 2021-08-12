@@ -347,7 +347,7 @@ section {
 }
 
 .section__title-none {
-  visibility: hidden;
+  display: none;
 }
 
 .section__title {
@@ -431,7 +431,7 @@ form {
 }
 
 .header__phone {
-  margin: 10px 0 0 60px;
+  margin: 0 0 0 60px;
   fill: var(--color-white);
   stroke: var(--color-text);
   display: -webkit-box;
@@ -488,6 +488,18 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    margin: 22px 5px;
+  }
+}
+
+@media screen and (min-width: 1151px) {
+  .menu {
+    margin: 0;
+  }
 }
 
 .menu__item {
@@ -580,18 +592,8 @@ form {
   }
 }
 
-.mobile__menu {
-  top: 0;
-  z-index: 55;
-  padding: 20px 50px;
-  background: var(--color-hover);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-}
-
 .mobile__item {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .mobile__link {
@@ -601,8 +603,18 @@ form {
   font-weight: bold;
 }
 
-.header-mobile {
-  position: relative;
+.mobile__info-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: var(--color-hover);
+  stroke: var(--color-text);
+  margin-bottom: 50px;
+}
+
+.mobile-botton {
+  position: absolute;
+  bottom: 0;
 }
 
 .header__mobile-logo {
@@ -636,9 +648,26 @@ form {
   z-index: 60;
 }
 
+.mobile__nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  background: var(--color-hover);
+  z-index: 10;
+}
+
 .mobile__nav.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.mobile-phone-link {
+  color: var(--color-text);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -655,7 +684,7 @@ form {
   padding-top: 0;
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(/images/Rectangle-137.jpg);
+  background-image: url(../images/Rectangle-137.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -914,6 +943,10 @@ form {
   text-transform: uppercase;
 }
 
+.card:hover, .card:focus .card__info {
+  color: var(--color-white);
+}
+
 .card__price {
   font-weight: bold;
 }
@@ -1063,6 +1096,7 @@ form {
 }
 
 .footer__block {
+  position: relative;
   background: var(--color-text);
 }
 
@@ -1174,6 +1208,17 @@ form {
 .block__copuright {
   margin-top: 20px;
   color: var(--color-white);
+}
+
+.button-top-menu {
+  position: absolute;
+  top: -9px;
+  left: 36px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-hover);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,4 +1,5 @@
 .footer__block {
+    position: relative;
     background:var(--color-text);
 }
 
@@ -100,6 +101,17 @@
     margin-top: 20px;
     color:var(--color-white);
 }
+.button-top-menu {
+    position: absolute;
+    top: -9px;
+    left: 36px;
+    width:50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background:var(--color-hover);
+}
+
 
 @media screen and (min-width: 768px) {
     .footer__block-row {
