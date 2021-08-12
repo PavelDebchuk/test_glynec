@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="section__title-none">Головний заголовок</h1>
+      <div class="header__top">
+        <div class="header__info">
+          <div class="social">
+            <p class="social__text-header">Ми в соціальних мережах:</p>
+            <ul class="social__icon">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg width="22" height="22">
+                    <use href="./images/svg-sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg width="22" height="22">
+                    <use href="./images/svg-sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg width="22" height="22">
+                    <use href="./images/svg-sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__phone">
+            <svg width="24" height="30">
+              <use href="./images/svg-sprite.svg#icon-smartphone"></use>
+            </svg>
+            <p class="block__text block-phone">
+              <a class="header__phone-link" href="tel:0991112233">(099) 111 22 33</a>
+            </p>
+            <div class="svg-arrou">
+                <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            <p class="hover-tel">
+              <a class="header__phone-link" href="tel:0992223344">(099) 222 33 44</a>
+            </p>
+            </div>
+            
+          </div>
+        </div>
+        <nav>
+          <ul class="menu">  
+            <li class="menu__item">
+              <a href="#" class="menu__link">акції</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">доставка та оплата</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">про нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-bottom">
+        <ul class="header__filter">
+          <li class="header__filter-item">
+            <a href="#" class="header__filter-link">Дивани
+              <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="header__filter-item">
+            <a href="#" class="header__filter-link">ліжка
+              <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="header__filter-item">
+            <a href="#" class="header__filter-link">Крісла
+              <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="header__filter-item">
+            <a href="#" class="header__filter-link">шафи
+              <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="header__filter-item">
+            <a href="#" class="header__filter-link">Кухні
+              <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="header__filter-item">
+            <a href="#" class="header__filter-link">комоди
+              <svg width="12" height="8">
+                <use href="./images/svg-sprite.svg#icon-Vector-Stroke"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="header__block-logo">
+          <img src="./images/OBJECTS-header.png" width="125" height="75" alt="Логотип компанії">
+          <p class="logo__color">F<span class="logo__color-black">urniture.test</span></p>
+        </div>
+        <div class="basket">
+          <a class="basket__block" href="#">
+            <svg width="30" height="20">
+              <use href="./images/svg-sprite.svg#icon-shopping-cart"></use>
+            </svg>
+            кошик
+          </a>
+          <button class="button-call">
+            Замовити дзвінок
+          </button>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <div class="header__mobile-logo">
+          <img class="mobile__logo" src="./images/OBJECTS-header.png" width="125" height="75" alt="Логотип компанії">
+          <p class="logo__color">F<span class="logo__color-black">urniture.test</span></p>
+        </div>
+        <button type="button" class="menu-open">
+          <svg width="24" height="16">
+              <use href="./images/svg-sprite.svg#icon-menu"></use>
+          </svg>
+      </button>
+      </div>
+      <div class="mobile__nav is-hiden">
+        <button type="button" class="menu__close">
+          <svg width="18.67" height="18.67">
+              <use href="./images/svg-sprite.svg#icon-close"></use>
+          </svg>
+      </button>
+        <nav>
+          <ul class="mobile__menu">  
+            <li class="mobile__item">
+              <a href="#" class="mobile__link">акції</a>
+            </li>
+            <li class="mobile__item">
+              <a href="#" class="mobile__link">доставка та оплата</a>
+            </li>
+            <li class="mobile__item">
+              <a href="#" class="mobile__link">про нас</a>
+            </li>
+            <li class="mobile__item">
+              <a href="#" class="mobile__link">контакти</a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="slider">
+        <h2 class="section__title-none"></h2>
+        <div class="slider__info">
+            <p class="slider__new">Новинка!</p>
+            <h3 class="slider__title">Ліжко Ornella</h3>
+            <p class="slider__text">Це новий рівень комфортного сну</p>
+            <a class="read-more" href="#">Детальніше</a>
+            <div class="slider__block">
+              <div class="slider__number">
+                <p class="number_one" >01</p>
+                <p class="number">/</p>
+                <p class="number">04</p>
+              </div>
+              <div class="slider__button-block">
+                <button class="slider__button" type="button">
+                  <svg width="7" height="12">
+                    <use href="./images/svg-sprite.svg#icon-Arrow-Left"></use>
+                  </svg>
+                </button>
+                <button class="slider__button" type="button">
+                  <svg width="7" height="12">
+                    <use href="./images/svg-sprite.svg#icon-Arrow-Right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="advantage">
+      <div class="container">
+        <h2 class="section__title">Наші переваги</h2>
+        <ul class="advantage_list">
+          <li class="advantage_item">
+            <div class="advantage__img">
+              <img src="images/Rectangle-172.jpg" width="586" height="360" alt="Меблі преміум класу">
+              <div class="advantage__hover">
+                <h4 class="advantage__title">Меблі преміум класу</h4>
+                <p class="advantage__info">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+              </div>
+            </div>
+          </li>
+          <li class="advantage_item">
+            <div class="advantage__img">
+              <img src="images/Rectangle-169.jpg" width="586" height="360" alt="Надійність">
+              <div class="advantage__hover">
+                <h4 class="advantage__title">Надійність</h4>
+                <p class="advantage__info">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+              </div>
+            </div>
+          </li>
+          <li class="advantage_item">
+            <div class="advantage__img">
+              <img src="images/Rectangle-170.jpg" width="586" height="360" alt="Безкоштовна доставка">
+              <div class="advantage__hover">
+                <h4 class="advantage__title">Безкоштовна доставка</h4>
+                <p class="advantage__info">За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="category">
+      <div class="container">
+        <h2 class="section__title">Категорії товарів</h2>
+        <ul class="category__filter">
+          <li class="category__item">
+            <button class="category__button" type="button">
+              <svg width="100px" height="100px">
+                <use href="./images/svg-sprite.svg#icon-Group"></use>
+              </svg>
+              <p class="category__subtitle">Дивани</p>
+            </button>
+          </li>
+          <li class="category__item">
+            <button class="category__button" type="button">
+              <svg width="80px" height="100px">
+                <use href="./images/svg-sprite.svg#icon-Group-1"></use>
+              </svg>
+              <p class="category__subtitle">ліжка</p>
+            </button>
+          </li>
+          <li class="category__item">
+            <button class="category__button" type="button">
+              <svg width="100px" height="100px">
+                <use href="./images/svg-sprite.svg#icon-Group-2"></use>
+              </svg>
+              <p class="category__subtitle">крісла</p>
+            </button>
+          </li>
+          <li class="category__item">
+            <button class="category__button" type="button">
+              <svg width="100px" height="100px">
+                <use href="./images/svg-sprite.svg#icon-Group-3"></use>
+              </svg>
+              <p class="category__subtitle">комоди</p>
+            </button>
+          </li>
+          <li class="category__item">
+            <button class="category__button" type="button">
+              <svg width="67px" height="100px">
+                <use href="./images/svg-sprite.svg#icon-Group-4"></use>
+              </svg>
+              <p class="category__subtitle">шафи</p>
+            </button>
+          </li>
+          <li class="category__item">
+            <button class="category__button" type="button">
+              <svg width="100px" height="100px">
+                <use href="./images/svg-sprite.svg#icon-Group-5"></use>
+              </svg>
+              <p class="category__subtitle">кухня</p>
+            </button>
+          </li>
+        </ul>
+        <ul class="category__goods">
+          <li class="category__item">
+            <article class="card">
+                <a class="card__link" href="#">
+                    <div class="card__block">
+                      <img src="./images/Rectangle-140.jpg" width="586" height="300" alt="Ліжко Рамона">
+                      <p class="new___goods">Новинка</p>
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title">Ліжко Рамона</h2>
+                        <p class="card__price">8 999 грн</p>
+                    </div>
+                </a>
+            </article>
+          </li>
+          <li class="category__item">
+            <article class="card">
+                <a class="card__link" href="#">
+                    <div class="card__block">
+                      <img src="./images/Rectangle-141.jpg" width="586" height="300" alt="Ліжко Честер">
+                      <p class="new___goods">ХІт продаж</p>
+                      <p class="hot___goods">Акція</p>
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title">Ліжко Честер</h2>
+                        <p class="card__price card__price-hot">8 999 грн<span class="card__price-old">8 999 грн</span></p>
+                        
+                    </div>
+                </a>
+            </article>
+          </li>
+          <li class="category__item">
+            <article class="card">
+                <a class="card__link" href="#">
+                    <div class="card__block">
+                      <img src="./images/Rectangle-142.jpg" width="586" height="300" alt="Ліжко Венеція люкс">
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title">Ліжко Венеція люкс</h2>
+                        <p class="card__price">8 999 грн</p>
+                        
+                    </div>
+                </a>
+            </article>
+          </li>
+          <li class="category__item">
+            <article class="card">
+                <a class="card__link" href="#">
+                    <div class="card__block">
+                      <img src="./images/Rectangle-149.jpg" width="586" height="300" alt="Ліжко Імперія">
+                      <p class="new___goods">Новинка</p>
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title">Ліжко Імперія</h2>
+                        <p class="card__price">8 999 грн</p>
+                    </div>
+                </a>
+            </article>
+          </li>
+          <li class="category__item">
+            <article class="card">
+                <a class="card__link" href="#">
+                    <div class="card__block">
+                      <img src="./images/Rectangle-151.jpg" width="586" height="300" alt="Ліжко Адель">
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title">Ліжко Адель</h2>
+                        <p class="card__price">8 999 грн</p>
+                    </div>
+                </a>
+            </article>
+          </li>
+          <li class="category__item">
+            <article class="card">
+                <a class="card__link" href="#">
+                    <div class="card__block">
+                      <img src="./images/Rectangle-16.jpg" width="586" height="300" alt="Ліжко Атлант">
+                      <p class="new___goods">Новинка</p>
+                      <p class="hot___goods">Акція</p>
+                    </div>
+                    <div class="card__info">
+                        <h2 class="card__title">Ліжко Атлант</h2>
+                        <p class="card__price">8 999 грн<span class="card__price-old">8 999 грн</span></p>
+                    </div>
+                </a>
+            </article>
+          </li>
+        </ul>
+        <p class="category__catalog"><a class="category__catalog-text" href="#" >В каталог</a></p>
+      </div>
+
+    </section>
+    <section class="about-us">
+      <h2 class="section__title">Про нас</h2>
+      <div class="about-us__content">
+        <div class="abous-us__img">
+          <img src="./images/Rectangle-174.jpg" width="1407" height="675" alt="Про нас">
+        </div>
+        <div class="about-us__text">
+          <p class="about-us__info">Furniture" – "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p class="about-us__info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p class="about-us__info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <h2 class="section__title">Залишились питання?</h2>
+      <div class="contact-form__content">
+        <div class="contact-form__img">
+          <img src="./images/Rectangle-175.jpg" width="1560" height="675" alt="Залишились питання?">
+        </div>
+        <div class="contact-form__text">
+          <h3 class="contact-form__subtitle">Замовте консультацію</h3>
+          <div class="contact-form__block">
+            <label>
+                <input class="input-style" type="text" name="text-form" placeholder="Віталій">
+            </label>
+            <label>
+              <input class="input-style" type="tel" name="tel-form" placeholder="Номер телефону">
+            </label>
+          </div>
+          <button type="submit" class="contact-form__button">
+            ВІдправити
+          </button>
+          <p class="contact-form__info">
+            Залиште заявку або телефонуйте за номером <a href="tel:0991112233" class="number-bold">(099) 111 22 33</a>, і наш менеджер звяжеться з вами для кваліфікованої консультації.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer__block">
+      <div class="footer-content">
+        <div class="footer__block-logo">
+          <img src="./images/OBJECTS.png" width="125" height="75" alt="Логотип компанії">
+          <p class="logo__color">F<span class="logo__color-white">urniture.test</span></p>
+        </div>
+        <div class="footer__block-row">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Дивани</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">ліжка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Крісла</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">шафи</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Кухні</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">комоди</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">акції</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">доставка та оплата</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">про нас</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">контакти</a>
+            </li>
+          </ul>
+          <div class="block-contacts">
+            <div class="block__info">
+              <svg class="maps__icon" width="20" height="24">
+                <use href="./images/svg-sprite.svg#icon-maps"></use>
+              </svg>
+              <p class="block__text">TEST</p>
+            </div>
+            <div class="block__info">
+              <svg width="21" height="20">
+                <use href="./images/svg-sprite.svg#icon-calendar"></use>
+              </svg>
+              <p class="block__text">Пн-Пт, з 10 до 18</p>
+            </div>
+            <div class="block__info block__info-number">
+              <svg width="24" height="30">
+                <use href="./images/svg-sprite.svg#icon-smartphone"></use>
+              </svg>
+              <p class="block__text block-phone">
+                <a class="phone-link" href="tel:0991112233">(099) 111 22 33</a>
+                <a class="phone-link" href="tel:0992223344">(099) 222 33 44</a>
+              </p>
+            </div>
+            <div class="social">
+              <p class="social__text">Ми в соціальних мережах:</p>
+              <ul class="social__icon">
+                <li class="social__item-footer">
+                  <a href="#" class="social__link">
+                    <svg width="22" height="22">
+                      <use href="./images/svg-sprite.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item-footer">
+                  <a href="#" class="social__link">
+                    <svg width="22" height="22">
+                      <use href="./images/svg-sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item-footer">
+                  <a href="#" class="social__link">
+                    <svg width="22" height="22">
+                      <use href="./images/svg-sprite.svg#icon-telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="block__copuright">
+          <p>© ТОВ Furniture, працюємо з 2006 року</p>
+          <p><svg width="20" height="20">
+            <use href="./images/svg-sprite.svg#icon-glynec"></use>
+          </svg>Глянець — розробка інтернет-магазинів</p>
+        </div>
+      </div>
+      <div class="footer__img">
+        <img src="./images/Rectangle-176.jpg" width="1090" height="520" alt="Диван">
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+@font-face { 
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+  url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --color-text: #1e2e36;
+  --color-hover: #44c697;
+  --color-white: #ffffff;
+  --color-svg: #1e2e36;
+  --color-red:#FF1B1B;
+  --color-silver:#BCBDBB;
+
+
+
+}

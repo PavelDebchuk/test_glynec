@@ -1,0 +1,312 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/**
+1. Исправьте высоту строки во всех браузерах.
+2. Предотвратить корректировку размера шрифта после изменения ориентации в iOS.
+3. Используйте табуляцию более удобочитаемого размера (упрямая).
+*/
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-moz-tab-size: 4; /* 3 */
+	tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+1. Уберите маржу во всех браузерах.
+2. Улучшите согласованность шрифтов по умолчанию во всех браузерах. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+	margin: 0; /* 1 */
+	padding: 0;
+	font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji'; /* 2 */
+}
+
+/*
+Группировка контента
+================
+*/
+
+/**
+1. Добавьте правильную высоту в Firefox.
+2. Исправьте наследование цвета границы в Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
+}
+
+/*
+Семантика на уровне текста
+====================
+*/
+ul, li {
+    list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+/**
+Добавьте правильное оформление текста в Chrome, Edge и Safari.
+*/
+
+abbr[title] {
+	text-decoration: underline dotted;
+}
+
+/**
+Добавьте правильный вес шрифта в Edge и Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Улучшите согласованность шрифтов по умолчанию во всех браузерах. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Исправьте размер шрифта odd 'em' во всех браузерах.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Добавьте правильный размер шрифта во всех браузерах.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Предотвратить влияние элементов sub и sup на высоту строки во всех браузерах.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Табличные данные
+============
+*/
+
+/**
+1. Удалите отступ текста из содержимого таблицы в Chrome и Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Правильное наследование цвета границ таблицы во всех Chrome и Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
+}
+
+/*
+Формы
+=====
+*/
+
+/**
+1. Измените стили шрифтов во всех браузерах.
+2. Удалите поля в Firefox и Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Удалите наследование текстового преобразования в Edge и Firefox.
+*/
+
+button,
+select {
+	text-transform: none;
+	border:none;
+	cursor: pointer;
+}
+
+/**
+Исправлена ​​невозможность стилизации интерактивных типов в iOS и Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Удалите внутреннюю границу и отступ в Firefox.
+*/
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+Восстановите стили фокуса, не установленные предыдущим правилом.
+*/
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+Удалите дополнительные стили ': invalid' в Firefox.
+См. Https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
+Удалите отступы, чтобы разработчики не были пойманы, когда они обнуляют элементы fieldset во всех браузерах.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Добавьте правильное вертикальное выравнивание в Chrome и Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Исправьте стиль курсора кнопок увеличения и уменьшения в Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Исправьте странный вид в Chrome и Safari.
+2. Исправьте стиль контура в Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Удалите внутреннюю прокладку в Chrome и Safari на macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Исправьте невозможность стилизации интерактивных типов в iOS и Safari.
+2. Измените свойства шрифта на «наследование» в Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Интерактивный
+==========
+
+*/
+
+/*
+Добавьте правильный дисплей в Chrome и Safari.
+*/
+
+summary {
+	display: list-item;
+}
