@@ -87,14 +87,19 @@
 
 .social__text {
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .social__icon {
     display: flex;
 }
 .social__item-footer {
-    fill: var(--color-white);
+    
     margin-right: 30px;
+}
+
+.svg_white {
+    fill: var(--color-white);
 }
 
 .block__copuright {
